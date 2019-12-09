@@ -19,7 +19,7 @@ The code is provided in the `Wine.ipynb` notebook file. The dataset file `winequ
 
 ## Run
 
-In a terminal or command window, navigate to the top-level project directory `machine_learning/` (that contains this README) and run one of the following commands:
+In a terminal or command window, navigate to the top-level project directory `machine_learning/projects/` (that contains this README) and run one of the following commands:
 
 ```bash
 ipython notebook Wine.ipynb
