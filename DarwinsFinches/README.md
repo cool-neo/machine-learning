@@ -1,4 +1,4 @@
-# Project: 
+# Darwin's Finches: 
 
 
 ## Install
@@ -7,30 +7,22 @@ This project requires **Python** and the following Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
-- [seaborn](https://seaborn.pydata.org/)
-
-You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
-
-
-## Code
+- [Matplotlib](http://matplotlib.org/)
+- [Scikit-learn](http://scikit-learn.org/stable/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [Scipy](https://www.scipy.org/)
 
 
-## Run
+## Summary
+- Got the dataset about finches from Kaggle.
+- Removed some columns from the dataset.
+- Our aim is to find if there is significant difference of morphology ratio in the two species of finches.
+- Formulated a null and an alternate hypothesis.
+- Found that there is significant difference in morphology of both species.
 
-In a terminal or command window, navigate to the top-level project directory `machine_learning/DarwinsFinches/` (that contains this README) and run one of the following commands:
 
-```bash
-ipython notebook DarwinsFinches_.ipynb
-```  
-or
-```bash
-jupyter notebook DarwinsFinches_.ipynb
-```
-
-This will open the Jupyter Notebook software and project file in your browser.
-
-## Data
-
-**Features**
+## Data Collection
+- The dataset files is provided in 
+-   `finch_beaks-1975.csv` - The beak measurement of the finches recorded in 1975.
+-   `finch_beaks_2012.csv` - The beak measurement of the finches recorded in 2012.
+- Link to the dataset: https://www.kaggle.com/crbelhekar619/darwins-finches-evolution-dataset
