@@ -23,6 +23,6 @@ This project requires **Python** and the following Python libraries installed:
 
 ## Data Collection
 - The dataset files is provided in 
--   `finch_beaks-1975.csv` - The beak measurement of the finches recorded in 1975.
--   `finch_beaks_2012.csv` - The beak measurement of the finches recorded in 2012.
+  - `finch_beaks-1975.csv` - The beak measurement of the finches recorded in 1975.
+  -  `finch_beaks_2012.csv` - The beak measurement of the finches recorded in 2012.
 - Link to the dataset: https://www.kaggle.com/crbelhekar619/darwins-finches-evolution-dataset
