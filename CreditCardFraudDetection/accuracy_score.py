@@ -1,0 +1,16 @@
+# 1. Accuracy score
+
+print(cl('ACCURACY SCORE', attrs = ['bold']))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the Decision Tree model is {}'.format(accuracy_score(y_test, tree_yhat)), attrs = ['bold']))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the KNN model is {}'.format(accuracy_score(y_test, knn_yhat)), attrs = ['bold'], color = 'green'))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the Logistic Regression model is {}'.format(accuracy_score(y_test, lr_yhat)), attrs = ['bold'], color = 'red'))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the SVM model is {}'.format(accuracy_score(y_test, svm_yhat)), attrs = ['bold']))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the Random Forest Tree model is {}'.format(accuracy_score(y_test, rf_yhat)), attrs = ['bold']))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
+print(cl('Accuracy score of the XGBoost model is {}'.format(accuracy_score(y_test, xgb_yhat)), attrs = ['bold']))
+print(cl('------------------------------------------------------------------------', attrs = ['bold']))
