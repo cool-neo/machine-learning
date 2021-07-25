@@ -1,0 +1,12 @@
+cases = len(df)
+nonfraud_count = len(df[df.Class == 0])
+fraud_count = len(df[df.Class == 1])
+fraud_percentage = round(fraud_count/nonfraud_count*100, 2)
+
+print(cl('CASE COUNT', attrs = ['bold']))
+print(cl('--------------------------------------------', attrs = ['bold']))
+print(cl('Total number of cases are {}'.format(cases), attrs = ['bold']))
+print(cl('Number of Non-fraud cases are {}'.format(nonfraud_count), attrs = ['bold']))
+print(cl('Number of Non-fraud cases are {}'.format(fraud_count), attrs = ['bold']))
+print(cl('Percentage of fraud cases is {}'.format(fraud_percentage), attrs = ['bold']))
+print(cl('--------------------------------------------', attrs = ['bold']))
