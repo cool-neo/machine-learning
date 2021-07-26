@@ -9,7 +9,6 @@ This project requires **Python** and the following Python libraries installed:
 - [Matplotlib](http://matplotlib.org/)
 - [Scikit-learn](http://scikit-learn.org/stable/)
 - [Seaborn](https://seaborn.pydata.org/)
-- [Scipy](https://www.scipy.org/)
 
 
 ## Summary
