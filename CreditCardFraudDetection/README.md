@@ -17,7 +17,7 @@ This project requires **Python** and the following Python libraries installed:
 - Did data preprocessing using StandardScaler
 - Used different models to predict
 - Used accuracy and f1 score as evaluation metrics
-- Best accuracy and f1 score given KNN model
+- Best accuracy of 0.9995 and f1 score of 0.857 given by KNN model
 
 
 ## Data Collection
