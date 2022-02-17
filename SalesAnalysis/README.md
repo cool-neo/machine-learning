@@ -1,10 +1,10 @@
 # Sales Analysis: 
 
 ## Libraries Used
-- [Pandas]
-- [Numpy]
-- [Matplotlib]
-- [Seaborn]
+- `Pandas`
+- `Numpy`
+- `Matplotlib`
+- `Seaborn`
 
 ## Data 
 - Data available in the `Data` folder.
