@@ -1,15 +1,12 @@
 # Sales Analysis
 
 ## Import Necessary Libraries
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 ## Loading the data
-
 sales_jan = pd.read_csv('/content/Sales_January_2019.csv')
 sales_feb = pd.read_csv('/content/Sales_February_2019.csv')
 sales_mar = pd.read_csv('/content/Sales_March_2019.csv')
@@ -24,37 +21,30 @@ sales_nov = pd.read_csv('/content/Sales_November_2019.csv')
 sales_dec = pd.read_csv('/content/Sales_December_2019.csv')
 
 ### Merging all months of sales data into a single file
-
 sales = pd.concat([sales_jan, sales_feb, sales_mar, sales_apr, sales_may, sales_jun, sales_jul, sales_aug, sales_sep,
                    sales_oct, sales_nov, sales_dec], ignore_index=True, axis=0)
 sales
 
 #### Dropping all the null values
-
 sales.dropna(how='all', inplace=True)
 
 #### Creating a month column
-
 sales['Month'] = sales['Order Date'].apply(lambda x: str(x).split('/')[0])
 
 #### Deleting rows with Order Date as Month value
-
 sales.drop(sales[sales['Month']=='Order Date'].index, inplace=True)
 sales.info()
 
 #### Changing datatype of columns
-
 sales['Month'] = sales['Month'].astype('int32')
 sales['Quantity Ordered'] = sales['Quantity Ordered'].astype('int32')
 sales['Price Each'] = sales['Price Each'].astype('float32')
 
 #### Creating a sale column
-
 sales['Sale'] = sales['Quantity Ordered'] * sales['Price Each']
 sales
 
 #### What is the best month for sales? How much was earned that month?
-
 grouped_by_month = pd.DataFrame(sales.groupby(by='Month').sum())
 grouped_by_month
 
@@ -66,7 +56,6 @@ for p in ax.patches:
 Month of december has highest sales of around 46 lacs.
 
 #### What city had the highest number of sales?
-
 def city_state(x):
     city = x.split(',')[1]
     state = x.split(',')[2].split(' ')[1]
@@ -84,7 +73,6 @@ for p in a.patches:
     a.annotate('{:.0f}'.format(p.get_height()), (p.get_x()+0.15, p.get_height()+1))
 
 #### What time should we display advertisements to maximize likelihood of customer's buying product?
-
 sales['Order Date'] = pd.to_datetime(sales['Order Date'])
 sales['Hour'] = sales['Order Date'].apply(lambda x: x.hour)
 sales.head()
@@ -98,7 +86,6 @@ for p in a.patches:
     a.annotate('{:.0f}'.format(p.get_height()), (p.get_x()+0.15, p.get_height()+1))
 
 #### What products are most often sold together?
-
 grouped_by_order_id = sales.groupby('Order ID')['Order ID', 'Product'].transform(lambda x: ','.join(x))
 
 grouped_by_order_id
@@ -116,7 +103,6 @@ for key, value in count.most_common(9):
     print(key, value)
 
 #### What product sold the most? Why do you think it sold the most?
-
 grouped_by_product = sales.groupby('Product').sum()
 grouped_by_product
 
