@@ -22,9 +22,15 @@
 - Now that we have cleaned our data, we will do the test and train split using the train_test_split function.
 - We will use 70% of the data as the training data and the remaining 30% as the test data.
 
-## Accuracy
+## Result
+### Accuracy
 - Mean cross validation accuracy of `logistic regression` turned out to be 0.9996.
 - Mean cross validation accuracy of `Gaussian Naive Bayes` turned out to be 0.9525.
 - Mean cross validation accuracy of `Decision Tree Classifier` turned out to be 0.9998.
 - Mean cross validation accuracy of `Random Forest Classifier` turned out to be 1.0.
+
+- Decision Tree Classifier is the best classifier among all based on accuracy.
+
+
+
 
